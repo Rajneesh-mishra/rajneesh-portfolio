@@ -1676,15 +1676,18 @@
         }
 
         function animateSkillCard(card) {
-            if (window.gsap) {
-                gsap.to(card, {
-                    duration: 0,
-                    scale: 1.95,
-                    yoyo: true,
-                    repeat: 1,
-                    ease: 'power2.inOut'
-                });
-            }
+            // if (window.gsap) {
+            //     gsap.to(card, {
+            //         duration: 0.18,
+            //         scale: 0.93,
+            //         ease: 'power2.inOut',
+            //         yoyo: true,
+            //         repeat: 1,
+            //         onComplete: function() {
+            //             gsap.to(card, { scale: 1,transform: 'translateY(-10px)', duration: 0.12, ease: 'power2.inOut' });
+            //         }
+            //     });
+            // }
         }
 
         function animateStat(stat) {
